@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_search">
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.example.angebots_app.ui.search.SearchFragment"
+        android:label="Suche"
+        tools:layout="@layout/fragment_search" />
+
+    <fragment
+        android:id="@+id/navigation_favorite"
+        android:name="com.example.angebots_app.ui.favorite.FavoriteFragment"
+        android:label="Favoriten"
+        tools:layout="@layout/fragment_favorite" />
+
+    <fragment
+        android:id="@+id/navigation_shoppingList"
+        android:name="com.example.angebots_app.ui.shoppingList.ShoppingListFragment"
+        android:label="Einkaufsliste"
+        tools:layout="@layout/fragment_shoppingList" />
+
+    <fragment
+        android:id="@+id/navigation_more"
+        android:name="com.example.angebots_app.ui.more.MoreFragment"
+        android:label="Mehr"
+        tools:layout="@layout/fragment_more" />
+
+
+   <!-- <fragment
+        android:id="@+id/navigation_productDetails"
+        android:name="com.example.angebots_app.ui.productDetails.ProductDetailsFragment"
+        android:label="Produktdetails"
+        tools:layout="@layout/fragment_productdetails" />
+        -->
+
+</navigation>
